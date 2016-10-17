@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Cadastro de Produto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <p:outputLabel value="Nome"/>
+                <p:inputText value="#{telaMB.nome}"/>
+                <p:outputLabel value="descricao"/>
+                <p:inputText value="#{telaMB.descricao}"/>
+                <p:spacer/>
+                <p:commandButton value="Salvar" action="#{telaMB.salvar()}"/>
+            </h:panelGrid>
+            <p:commandButton value="Excluir"/>
+            <p:commandButton value="Pesquisar"/>
+        </h:form>
+    </h:body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
